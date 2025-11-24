@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlotTrust</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Tailwind CDN & Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-dark': '#0F0F11', // Deep black-ish grey
+              'brand-secondary': '#1E1E24', // Lighter grey for cards
+              'brand-accent': '#FF6B00', // Vibrant Orange
+              'brand-accent-light': '#FF8533', 
+              'brand-text-light': '#FFFFFF',
+              'brand-text-muted': '#9CA3AF',
+              'brand-safe': '#10B981', // Green
+              'brand-caution': '#F59E0B', // Amber
+              'brand-risky': '#EF4444', // Red
+              'brand-surface': '#27272A',
+              'brand-border': '#3F3F46',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
